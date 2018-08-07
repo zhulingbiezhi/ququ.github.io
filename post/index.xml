@@ -6,10 +6,19 @@
     <description>Recent content in Posts on 去去的blog - A super concise theme for Hugo</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 07 Aug 2018 12:17:15 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 07 Aug 2018 15:04:54 +0800</lastBuildDate>
     
 	<atom:link href="http://zhulingbiezhi.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>【转】Kubernetes核心组件解析</title>
+      <link>http://zhulingbiezhi.github.io/post/%E8%BD%ACkubernetes%E6%A0%B8%E5%BF%83%E7%BB%84%E4%BB%B6%E8%A7%A3%E6%9E%90/</link>
+      <pubDate>Tue, 07 Aug 2018 15:04:54 +0800</pubDate>
+      
+      <guid>http://zhulingbiezhi.github.io/post/%E8%BD%ACkubernetes%E6%A0%B8%E5%BF%83%E7%BB%84%E4%BB%B6%E8%A7%A3%E6%9E%90/</guid>
+      <description>众所周知，Kubernetes是目前最为火热的容器编排工具之一，其背后有如此多的追随者必然是有原因的。首先Kubernetes非常轻量，通常</description>
+    </item>
     
     <item>
       <title>【转】使用GRafana监控Go应用</title>
