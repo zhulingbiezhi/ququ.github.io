@@ -6,18 +6,36 @@
     <description>Recent content in Kubernetes on 去去的blog - A super concise theme for Hugo</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 07 Aug 2018 11:22:32 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 07 Aug 2018 15:04:54 +0800</lastBuildDate>
     
 	<atom:link href="http://zhulingbiezhi.github.io/tags/kubernetes/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>【转】kubenetes调度详解</title>
+      <title>【转】Kubernetes核心组件解析</title>
+      <link>http://zhulingbiezhi.github.io/post/%E8%BD%ACkubernetes%E6%A0%B8%E5%BF%83%E7%BB%84%E4%BB%B6%E8%A7%A3%E6%9E%90/</link>
+      <pubDate>Tue, 07 Aug 2018 15:04:54 +0800</pubDate>
+      
+      <guid>http://zhulingbiezhi.github.io/post/%E8%BD%ACkubernetes%E6%A0%B8%E5%BF%83%E7%BB%84%E4%BB%B6%E8%A7%A3%E6%9E%90/</guid>
+      <description>众所周知，Kubernetes是目前最为火热的容器编排工具之一，其背后有如此多的追随者必然是有原因的。首先Kubernetes非常轻量，通常</description>
+    </item>
+    
+    <item>
+      <title>【转】kubernetes调度详解</title>
       <link>http://zhulingbiezhi.github.io/post/%E8%BD%ACkubenetes%E8%B0%83%E5%BA%A6%E8%AF%A6%E8%A7%A3/</link>
       <pubDate>Tue, 07 Aug 2018 11:22:32 +0800</pubDate>
       
       <guid>http://zhulingbiezhi.github.io/post/%E8%BD%ACkubenetes%E8%B0%83%E5%BA%A6%E8%AF%A6%E8%A7%A3/</guid>
       <description>【编者的话】优良的调度是分布式系统的核心。Scheduler调度器做为Kubernetes三大核心组件之一， 承载着整个集群资源的调度功能，其</description>
+    </item>
+    
+    <item>
+      <title>【转】Kubeadm原理解析</title>
+      <link>http://zhulingbiezhi.github.io/post/%E8%BD%ACkubeadm%E5%8E%9F%E7%90%86%E8%A7%A3%E6%9E%90/</link>
+      <pubDate>Tue, 07 Aug 2018 11:19:03 +0800</pubDate>
+      
+      <guid>http://zhulingbiezhi.github.io/post/%E8%BD%ACkubeadm%E5%8E%9F%E7%90%86%E8%A7%A3%E6%9E%90/</guid>
+      <description>【编者的话】根据所处环境的不同，Kubernetes集群的安装部署有多种不同的方式。如果是在公有云上还好，一般都会提供相应的安装方案。如果是</description>
     </item>
     
     <item>

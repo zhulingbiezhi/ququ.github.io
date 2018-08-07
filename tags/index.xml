@@ -6,19 +6,10 @@
     <description>Recent content in Tags on 去去的blog - A super concise theme for Hugo</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 07 Aug 2018 11:22:32 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 06 Aug 2018 11:18:15 +0800</lastBuildDate>
     
 	<atom:link href="http://zhulingbiezhi.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>Docker</title>
-      <link>http://zhulingbiezhi.github.io/tags/docker/</link>
-      <pubDate>Tue, 07 Aug 2018 11:22:32 +0800</pubDate>
-      
-      <guid>http://zhulingbiezhi.github.io/tags/docker/</guid>
-      <description></description>
-    </item>
     
     <item>
       <title>Etcd</title>
@@ -30,27 +21,9 @@
     </item>
     
     <item>
-      <title>Kubenetes</title>
-      <link>http://zhulingbiezhi.github.io/tags/kubenetes/</link>
-      <pubDate>Tue, 07 Aug 2018 15:04:54 +0800</pubDate>
-      
-      <guid>http://zhulingbiezhi.github.io/tags/kubenetes/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Kubenets</title>
-      <link>http://zhulingbiezhi.github.io/tags/kubenets/</link>
-      <pubDate>Tue, 07 Aug 2018 11:19:03 +0800</pubDate>
-      
-      <guid>http://zhulingbiezhi.github.io/tags/kubenets/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Kubernetes</title>
       <link>http://zhulingbiezhi.github.io/tags/kubernetes/</link>
-      <pubDate>Tue, 07 Aug 2018 11:22:32 +0800</pubDate>
+      <pubDate>Tue, 07 Aug 2018 15:04:54 +0800</pubDate>
       
       <guid>http://zhulingbiezhi.github.io/tags/kubernetes/</guid>
       <description></description>
