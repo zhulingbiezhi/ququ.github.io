@@ -44,13 +44,6 @@
   </url>
   
   <url>
-    <loc>http://zhulingbiezhi.github.io/</loc>
-    <lastmod>2018-08-06T11:18:15+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>http://zhulingbiezhi.github.io/post/</loc>
     <lastmod>2018-08-06T11:18:15+08:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -66,6 +59,13 @@
   
   <url>
     <loc>http://zhulingbiezhi.github.io/tags/tcp/</loc>
+    <lastmod>2018-08-06T11:18:15+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://zhulingbiezhi.github.io/</loc>
     <lastmod>2018-08-06T11:18:15+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
