@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Websocket on 去去的blog - A super concise theme for Hugo</title>
+    <link>http://zhulingbiezhi.github.io/tags/websocket/</link>
+    <description>Recent content in Websocket on 去去的blog - A super concise theme for Hugo</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 07 Aug 2018 11:44:00 +0800</lastBuildDate>
+    
+	<atom:link href="http://zhulingbiezhi.github.io/tags/websocket/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>【转】单机100w连接（C1000K）</title>
+      <link>http://zhulingbiezhi.github.io/post/%E8%BD%AC%E5%8D%95%E6%9C%BA100w%E8%BF%9E%E6%8E%A5c1000k/</link>
+      <pubDate>Tue, 07 Aug 2018 11:44:00 +0800</pubDate>
+      
+      <guid>http://zhulingbiezhi.github.io/post/%E8%BD%AC%E5%8D%95%E6%9C%BA100w%E8%BF%9E%E6%8E%A5c1000k/</guid>
+      <description>前言 关于C10K的问题就不多说了，应该是一个说烂的话题。网上也有很多C1000k，甚至C10M（也就是1kw并发）的文章，后面会给出我所阅读</description>
+    </item>
+    
+  </channel>
+</rss>

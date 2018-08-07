@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Mysql on 去去的blog - A super concise theme for Hugo</title>
+    <link>http://zhulingbiezhi.github.io/tags/mysql/</link>
+    <description>Recent content in Mysql on 去去的blog - A super concise theme for Hugo</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 07 Aug 2018 11:35:45 +0800</lastBuildDate>
+    
+	<atom:link href="http://zhulingbiezhi.github.io/tags/mysql/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>【转】彻底解决mysql中文乱码</title>
+      <link>http://zhulingbiezhi.github.io/post/%E8%BD%AC%E5%BD%BB%E5%BA%95%E8%A7%A3%E5%86%B3mysql%E4%B8%AD%E6%96%87%E4%B9%B1%E7%A0%81/</link>
+      <pubDate>Tue, 07 Aug 2018 11:35:45 +0800</pubDate>
+      
+      <guid>http://zhulingbiezhi.github.io/post/%E8%BD%AC%E5%BD%BB%E5%BA%95%E8%A7%A3%E5%86%B3mysql%E4%B8%AD%E6%96%87%E4%B9%B1%E7%A0%81/</guid>
+      <description>彻底解决mysql中文乱码 mysql是我们项目中非常常用的数据型数据库。但是因为我们需要在数据库保存中文字符，所以经常遇到数据库乱码情况。下</description>
+    </item>
+    
+    <item>
+      <title>【转】mysql  Join详解</title>
+      <link>http://zhulingbiezhi.github.io/post/%E8%BD%ACmysql--join%E8%AF%A6%E8%A7%A3/</link>
+      <pubDate>Tue, 07 Aug 2018 11:31:25 +0800</pubDate>
+      
+      <guid>http://zhulingbiezhi.github.io/post/%E8%BD%ACmysql--join%E8%AF%A6%E8%A7%A3/</guid>
+      <description>0 索引 JOIN语句的执行顺序 INNER/LEFT/RIGHT/FULL JOIN的区别 ON和WHERE的区别 1 概述 一个完整的SQL语句中会被拆分成多个子句，子句的执行过程中会产生虚拟</description>
+    </item>
+    
+  </channel>
+</rss>

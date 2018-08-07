@@ -6,10 +6,19 @@
     <description>Recent content in Tags on 去去的blog - A super concise theme for Hugo</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 06 Aug 2018 11:18:15 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 07 Aug 2018 11:22:32 +0800</lastBuildDate>
     
 	<atom:link href="http://zhulingbiezhi.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Docker</title>
+      <link>http://zhulingbiezhi.github.io/tags/docker/</link>
+      <pubDate>Tue, 07 Aug 2018 11:22:32 +0800</pubDate>
+      
+      <guid>http://zhulingbiezhi.github.io/tags/docker/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Etcd</title>
@@ -21,11 +30,65 @@
     </item>
     
     <item>
+      <title>Kubenets</title>
+      <link>http://zhulingbiezhi.github.io/tags/kubenets/</link>
+      <pubDate>Tue, 07 Aug 2018 11:19:03 +0800</pubDate>
+      
+      <guid>http://zhulingbiezhi.github.io/tags/kubenets/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Kubernetes</title>
+      <link>http://zhulingbiezhi.github.io/tags/kubernetes/</link>
+      <pubDate>Tue, 07 Aug 2018 11:22:32 +0800</pubDate>
+      
+      <guid>http://zhulingbiezhi.github.io/tags/kubernetes/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Monitor</title>
+      <link>http://zhulingbiezhi.github.io/tags/monitor/</link>
+      <pubDate>Tue, 07 Aug 2018 12:17:15 +0800</pubDate>
+      
+      <guid>http://zhulingbiezhi.github.io/tags/monitor/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Mysql</title>
+      <link>http://zhulingbiezhi.github.io/tags/mysql/</link>
+      <pubDate>Tue, 07 Aug 2018 11:35:45 +0800</pubDate>
+      
+      <guid>http://zhulingbiezhi.github.io/tags/mysql/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Tcp</title>
       <link>http://zhulingbiezhi.github.io/tags/tcp/</link>
       <pubDate>Mon, 06 Aug 2018 11:18:15 +0800</pubDate>
       
       <guid>http://zhulingbiezhi.github.io/tags/tcp/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Websocket</title>
+      <link>http://zhulingbiezhi.github.io/tags/websocket/</link>
+      <pubDate>Tue, 07 Aug 2018 11:44:00 +0800</pubDate>
+      
+      <guid>http://zhulingbiezhi.github.io/tags/websocket/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>分布式</title>
+      <link>http://zhulingbiezhi.github.io/tags/%E5%88%86%E5%B8%83%E5%BC%8F/</link>
+      <pubDate>Tue, 07 Aug 2018 11:22:32 +0800</pubDate>
+      
+      <guid>http://zhulingbiezhi.github.io/tags/%E5%88%86%E5%B8%83%E5%BC%8F/</guid>
       <description></description>
     </item>
     

@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>【转】彻底解决mysql中文乱码 - 去去的blog - A super concise theme for Hugo</title>
+  <meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+
+<meta name="author" content="去去" /><meta name="description" content="彻底解决mysql中文乱码" />
+<meta name="keywords" content="mysql" />
+
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.46" />
+
+
+<link rel="canonical" href="http://zhulingbiezhi.github.io/post/%E8%BD%AC%E5%BD%BB%E5%BA%95%E8%A7%A3%E5%86%B3mysql%E4%B8%AD%E6%96%87%E4%B9%B1%E7%A0%81/" />
+
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+
+
+
+
+<link href="/dist/even.min.css?v=3.2.0" rel="stylesheet">
+<link href="/lib/fancybox/jquery.fancybox-3.1.20.min.css" rel="stylesheet">
+
+
+
+
+<meta property="og:title" content="【转】彻底解决mysql中文乱码" />
+<meta property="og:description" content="彻底解决mysql中文乱码" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://zhulingbiezhi.github.io/post/%E8%BD%AC%E5%BD%BB%E5%BA%95%E8%A7%A3%E5%86%B3mysql%E4%B8%AD%E6%96%87%E4%B9%B1%E7%A0%81/" />
+
+
+
+<meta property="article:published_time" content="2018-08-07T11:35:45&#43;08:00"/>
+
+<meta property="article:modified_time" content="2018-08-07T11:35:45&#43;08:00"/>
+
+
+
+
+
+
+
+
+
+
+
+<meta itemprop="name" content="【转】彻底解决mysql中文乱码">
+<meta itemprop="description" content="彻底解决mysql中文乱码">
+
+
+<meta itemprop="datePublished" content="2018-08-07T11:35:45&#43;08:00" />
+<meta itemprop="dateModified" content="2018-08-07T11:35:45&#43;08:00" />
+<meta itemprop="wordCount" content="1068">
+
+
+
+<meta itemprop="keywords" content="mysql," />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="【转】彻底解决mysql中文乱码"/>
+<meta name="twitter:description" content="彻底解决mysql中文乱码"/>
+
+<!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+<![endif]-->
+
+</head>
+<body>
+  <div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/" class="logo">去去</a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    <a href="/">
+        <li class="mobile-menu-item">主页</li>
+      </a><a href="/post/">
+        <li class="mobile-menu-item">档案</li>
+      </a><a href="/tags/">
+        <li class="mobile-menu-item">标签</li>
+      </a><a href="/categories/">
+        <li class="mobile-menu-item">类别</li>
+      </a>
+  </ul>
+</nav>
+  <div class="container" id="mobile-panel">
+    <header id="header" class="header">
+        <div class="logo-wrapper">
+  <a href="/" class="logo">去去</a>
+</div>
+
+<nav class="site-navbar">
+  <ul id="menu" class="menu">
+    <li class="menu-item">
+        <a class="menu-item-link" href="/">主页</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/post/">档案</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/tags/">标签</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/categories/">类别</a>
+      </li>
+  </ul>
+</nav>
+    </header>
+
+    <main id="main" class="main">
+      <div class="content-wrapper">
+        <div id="content" class="content">
+          <article class="post">
+    
+    <header class="post-header">
+      <h1 class="post-title">【转】彻底解决mysql中文乱码</h1>
+
+      <div class="post-meta">
+        <span class="post-time"> 2018-08-07 </span>
+        <div class="post-category">
+            
+              <a href="/categories/mysql/"> mysql </a>
+            
+          </div>
+        
+        
+      </div>
+    </header>
+
+    
+    
+<div class="post-toc" id="post-toc">
+  <h2 class="post-toc-title">文章目录</h2>
+  
+  <div class="post-toc-content always-active">
+    <nav id="TableOfContents">
+<ul>
+<li><a href="#彻底解决mysql中文乱码">彻底解决mysql中文乱码</a>
+<ul>
+<li>
+<ul>
+<li><a href="#1-中文乱码"><strong>1、中文乱码</strong></a>
+<ul>
+<li><a href="#1-1-中文乱码"><strong>1.1、中文乱码</strong></a></li>
+<li><a href="#1-2-查看表字符编码"><strong>1.2、查看表字符编码</strong></a></li>
+<li><a href="#1-3-数据库与操作系统编码"><strong>1.3、数据库与操作系统编码</strong></a></li>
+</ul></li>
+<li><a href="#2-mysql设置变量的范围"><strong>2、mysql设置变量的范围</strong></a>
+<ul>
+<li><a href="#2-1-session范围"><strong>2.1、session范围</strong></a></li>
+<li><a href="#2-2-global范围"><strong>2.2、global范围</strong></a></li>
+<li><a href="#2-3-设置数据全局范围"><strong>2.3、设置数据全局范围</strong></a></li>
+</ul></li>
+<li><a href="#3-总结"><strong>3、总结</strong></a></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav>
+  </div>
+</div>
+
+    
+    
+
+    
+    <div class="post-content">
+      
+
+<h1 id="彻底解决mysql中文乱码">彻底解决mysql中文乱码</h1>
+
+<p>mysql是我们项目中非常常用的数据型数据库。但是因为我们需要在数据库保存中文字符，所以经常遇到数据库乱码情况。下面就来介绍一下如何彻底解决数据库中文乱码情况。</p>
+
+<h3 id="1-中文乱码"><strong>1、中文乱码</strong></h3>
+
+<h4 id="1-1-中文乱码"><strong>1.1、中文乱码</strong></h4>
+
+<pre><code> create table user(name varchar(11));    # 创建user表
+ insert into table user(&quot;carl&quot;);         # 添加数据
+ select * from user;
+</code></pre>
+
+<p><img src="https://img-blog.csdn.net/20170312150004135?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvdTAxMjQxMDczMw==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述" /></p>
+
+<pre><code>insert into user value(&quot;哈哈&quot;);
+</code></pre>
+
+<p><strong>无法插入中文字符：</strong></p>
+
+<p><img src="https://img-blog.csdn.net/20170312150059411?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvdTAxMjQxMDczMw==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述" /></p>
+
+<h4 id="1-2-查看表字符编码"><strong>1.2、查看表字符编码</strong></h4>
+
+<pre><code>mysql&gt; show create table user \G;
+*************************** 1. row ***************************
+       Table: user
+Create Table: CREATE TABLE `user` (
+  `name` varchar(11) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1
+1 row in set (0.00 sec)
+</code></pre>
+
+<p><strong>我们可以看到表的默认字符集是latin1.</strong><br />
+<strong>所以我们在创建表的时候就需要指定表的字符集:</strong></p>
+
+<pre><code> create table user(name varchar(11)) default charset=utf8; 
+</code></pre>
+
+<p><strong>这样在Linux里面可以访问并且可以插入与访问这个表了。</strong></p>
+
+<p><img src="https://img-blog.csdn.net/20170312151820544?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvdTAxMjQxMDczMw==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述" /></p>
+
+<h4 id="1-3-数据库与操作系统编码"><strong>1.3、数据库与操作系统编码</strong></h4>
+
+<p>虽然在服务器端可以显示中文正常，但是在客户端可能会显示乱码。因为我们的服务器是UTF8。</p>
+
+<p><img src="https://img-blog.csdn.net/20170312152019411?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvdTAxMjQxMDczMw==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述" /></p>
+
+<p><strong>而且数据库的编码也存在问题。</strong></p>
+
+<p><img src="https://img-blog.csdn.net/20170312152204299?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvdTAxMjQxMDczMw==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述" /></p>
+
+<p><strong>这里我们可以看character_sert_database与character_set_server的字符集都是latin1.那么在mysql数据库中，server,database,table的字符集都默认是latin1.下面我们就来看看如何解决mysql乱码情况。</strong></p>
+
+<h3 id="2-mysql设置变量的范围"><strong>2、mysql设置变量的范围</strong></h3>
+
+<h4 id="2-1-session范围"><strong>2.1、session范围</strong></h4>
+
+<p>查看数据库编码：</p>
+
+<pre><code>show variables like '%char%';
+</code></pre>
+
+<p><img src="https://img-blog.csdn.net/20170312153042389?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvdTAxMjQxMDczMw==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述" /></p>
+
+<p>修改字符编码：</p>
+
+<pre><code>set character_set_server=utf8;
+set character_set_database=utf8;
+show variables like '%char%';
+</code></pre>
+
+<p><img src="https://img-blog.csdn.net/20170312153312892?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvdTAxMjQxMDczMw==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述" /><br />
+我们可以看到字符集已经修改成都是utf8了。但是这里有一个问题，那就是我们重新打开一个命令窗口然后查看数据编码就会出现下面的画面：</p>
+
+<p><img src="https://img-blog.csdn.net/20170312153601693?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvdTAxMjQxMDczMw==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述" /></p>
+
+<h4 id="2-2-global范围"><strong>2.2、global范围</strong></h4>
+
+<p>mysql设置变量的范围默认是session范围。如果设置多个会话的字符集那么需要设置global范围:<strong>Set [global|session] variables …</strong></p>
+
+<pre><code>set global character_set_database=utf8;
+set global character_set_server=utf8;
+show variables like '%char%';
+</code></pre>
+
+<p>当我们跨会话查看mysql字符集都会看到都是utf8。如果你以为万事大吉了的话，那么你就大错特错了。</p>
+
+<h4 id="2-3-设置数据全局范围"><strong>2.3、设置数据全局范围</strong></h4>
+
+<p>当我们数据库重启的时候，你们发现设置global范围的值又变成latin1了。</p>
+
+<pre><code>service mysqld restart
+mysql -uroot -pyourpassword
+show variables like '%char%';
+</code></pre>
+
+<p><img src="https://img-blog.csdn.net/20170312154546628?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvdTAxMjQxMDczMw==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述" /></p>
+
+<p>不要怕，下面就教你终极大招：</p>
+
+<p>修改mysql配置文件/etc/my.cnf。</p>
+
+<pre><code>[mysqld]
+character-set-server=utf8 
+[client]
+default-character-set=utf8 
+[mysql]
+default-character-set=utf8
+</code></pre>
+
+<p>请注意这几个参数配置的位置，不然可能会启动不起来mysql服务：</p>
+
+<p><img src="https://img-blog.csdn.net/20170312160537963?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvdTAxMjQxMDczMw==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述" /></p>
+
+<p>OK。这下如果你重启mysql服务也会发现它的字符集是utf8.</p>
+
+<p><img src="https://img-blog.csdn.net/20170312161517748?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvdTAxMjQxMDczMw==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述" /></p>
+
+<p>而且我们创建表的时候不需要指定字符编码,它默认就是utf8;</p>
+
+<pre><code>drop database test;
+create database test;
+use test;
+create table user(name varchar(11));
+show create table user \G;
+</code></pre>
+
+<p><img src="https://img-blog.csdn.net/20170312161546359?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvdTAxMjQxMDczMw==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述" /></p>
+
+<h3 id="3-总结"><strong>3、总结</strong></h3>
+
+<p>我看网上很多答案都是直接在session级别设置mysql的字符编码，这是治标不治本的方法。我们还是要从源头上解决这个问题。那就是修改mysql默认的配置文件，把它的字符集修改成能够使用中文字符的UTF8就OK了。</p>
+
+    </div>
+
+    
+    <div class="post-copyright">
+  <p class="copyright-item">
+    <span class="item-title">文章作者</span>
+    <span class="item-content">去去</span>
+  </p>
+  <p class="copyright-item">
+    <span class="item-title">上次更新</span>
+    <span class="item-content">2018-08-07</span>
+  </p>
+  
+  
+</div>
+
+    
+    
+
+    <footer class="post-footer">
+      <div class="post-tags">
+          
+          <a href="/tags/mysql/">mysql</a>
+          
+        </div>
+
+      
+      <nav class="post-nav">
+        
+          <a class="prev" href="/post/%E8%BD%AC%E5%8D%95%E6%9C%BA100w%E8%BF%9E%E6%8E%A5c1000k/">
+            <i class="iconfont icon-left"></i>
+            <span class="prev-text nav-default">【转】单机100w连接（C1000K）</span>
+            <span class="prev-text nav-mobile">上一篇</span>
+          </a>
+        
+          <a class="next" href="/post/%E8%BD%ACmysql--join%E8%AF%A6%E8%A7%A3/">
+            <span class="next-text nav-default">【转】mysql  Join详解</span>
+            <span class="next-text nav-mobile">下一篇</span>
+            <i class="iconfont icon-right"></i>
+          </a>
+      </nav>
+    </footer>
+  </article>
+        </div>
+        
+  
+
+  
+
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="social-links">
+      <a href="mailto:your@email.com" class="iconfont icon-email" title="email"></a>
+      <a href="http://localhost:1313" class="iconfont icon-stack-overflow" title="stack-overflow"></a>
+      <a href="http://localhost:1313" class="iconfont icon-twitter" title="twitter"></a>
+      <a href="http://localhost:1313" class="iconfont icon-facebook" title="facebook"></a>
+      <a href="http://localhost:1313" class="iconfont icon-linkedin" title="linkedin"></a>
+      <a href="http://localhost:1313" class="iconfont icon-google" title="google"></a>
+      <a href="http://localhost:1313" class="iconfont icon-github" title="github"></a>
+      <a href="http://localhost:1313" class="iconfont icon-weibo" title="weibo"></a>
+      <a href="http://localhost:1313" class="iconfont icon-zhihu" title="zhihu"></a>
+      <a href="http://localhost:1313" class="iconfont icon-douban" title="douban"></a>
+      <a href="http://localhost:1313" class="iconfont icon-pocket" title="pocket"></a>
+      <a href="http://localhost:1313" class="iconfont icon-tumblr" title="tumblr"></a>
+      <a href="http://localhost:1313" class="iconfont icon-instagram" title="instagram"></a>
+  <a href="http://zhulingbiezhi.github.io/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
+</div>
+
+<div class="copyright">
+  <span class="power-by">
+    由 <a class="hexo-link" href="https://gohugo.io">Hugo</a> 强力驱动
+  </span>
+  <span class="division">|</span>
+  <span class="theme-info">
+    主题 - 
+    <a class="theme-link" href="https://github.com/olOwOlo/hugo-theme-even">Even</a>
+  </span>
+
+  
+
+  <span class="copyright-year">
+    &copy; 
+    2018
+    <span class="heart">
+      <i class="iconfont icon-heart"></i>
+    </span>
+    <span class="author">去去</span>
+  </span>
+</div>
+    </footer>
+
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont icon-up"></i>
+    </div>
+  </div>
+  
+<script src="/lib/highlight/highlight.pack.js?v=20171001"></script><script type="text/javascript" src="/lib/jquery/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="/lib/slideout/slideout-1.0.1.min.js"></script>
+  <script type="text/javascript" src="/lib/fancybox/jquery.fancybox-3.1.20.min.js"></script>
+
+
+<script type="text/javascript" src="/dist/even.min.js?v=3.2.0"></script>
+
+
+
+
+
+
+
+
+</body>
+</html>

@@ -13,11 +13,20 @@
     
     <item>
       <title>【原】etcd3-server-API</title>
-      <link>http://zhulingbiezhi.github.io/post/etcd3-server-api/</link>
+      <link>http://zhulingbiezhi.github.io/post/%E5%8E%9Fetcd3-server-api/</link>
       <pubDate>Mon, 06 Aug 2018 11:18:15 +0800</pubDate>
       
-      <guid>http://zhulingbiezhi.github.io/post/etcd3-server-api/</guid>
+      <guid>http://zhulingbiezhi.github.io/post/%E5%8E%9Fetcd3-server-api/</guid>
       <description>etcd3项目分为两部分，一是etcd clientv3，一是etcd3 server。etcd3与etcd2是不同的代码实现，同时etcd3 s</description>
+    </item>
+    
+    <item>
+      <title>【转】Etcd服务端实现</title>
+      <link>http://zhulingbiezhi.github.io/post/%E8%BD%ACetcd%E6%9C%8D%E5%8A%A1%E7%AB%AF%E5%AE%9E%E7%8E%B0/</link>
+      <pubDate>Mon, 06 Aug 2018 11:18:15 +0800</pubDate>
+      
+      <guid>http://zhulingbiezhi.github.io/post/%E8%BD%ACetcd%E6%9C%8D%E5%8A%A1%E7%AB%AF%E5%AE%9E%E7%8E%B0/</guid>
+      <description>7.1 Etcd启动 Etcd有多种启动方式，我们从最简单的方式入手，也就是从embed的etcd.go开始启动，最后会启动EtcdServer。 先</description>
     </item>
     
   </channel>

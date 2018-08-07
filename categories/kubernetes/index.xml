@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Kubernetes on 去去的blog - A super concise theme for Hugo</title>
+    <link>http://zhulingbiezhi.github.io/categories/kubernetes/</link>
+    <description>Recent content in Kubernetes on 去去的blog - A super concise theme for Hugo</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 07 Aug 2018 11:22:32 +0800</lastBuildDate>
+    
+	<atom:link href="http://zhulingbiezhi.github.io/categories/kubernetes/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>【转】kubenetes调度详解</title>
+      <link>http://zhulingbiezhi.github.io/post/%E8%BD%ACkubenetes%E8%B0%83%E5%BA%A6%E8%AF%A6%E8%A7%A3/</link>
+      <pubDate>Tue, 07 Aug 2018 11:22:32 +0800</pubDate>
+      
+      <guid>http://zhulingbiezhi.github.io/post/%E8%BD%ACkubenetes%E8%B0%83%E5%BA%A6%E8%AF%A6%E8%A7%A3/</guid>
+      <description>【编者的话】优良的调度是分布式系统的核心。Scheduler调度器做为Kubernetes三大核心组件之一， 承载着整个集群资源的调度功能，其</description>
+    </item>
+    
+    <item>
+      <title>【转】强大的Kubernetes包管理工具: Helm</title>
+      <link>http://zhulingbiezhi.github.io/post/%E8%BD%ACkubenetes_helm/</link>
+      <pubDate>Mon, 06 Aug 2018 11:18:15 +0800</pubDate>
+      
+      <guid>http://zhulingbiezhi.github.io/post/%E8%BD%ACkubenetes_helm/</guid>
+      <description>【编者的话】Helm是Kubernetes生态系统中的一个软件包管理工具。本文将介绍为何要使用Helm进行Kubernetes软件包管理，澄</description>
+    </item>
+    
+  </channel>
+</rss>

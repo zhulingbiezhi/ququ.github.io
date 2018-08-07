@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Monitor on 去去的blog - A super concise theme for Hugo</title>
+    <link>http://zhulingbiezhi.github.io/categories/monitor/</link>
+    <description>Recent content in Monitor on 去去的blog - A super concise theme for Hugo</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 07 Aug 2018 12:17:15 +0800</lastBuildDate>
+    
+	<atom:link href="http://zhulingbiezhi.github.io/categories/monitor/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>【转】使用GRafana监控Go应用</title>
+      <link>http://zhulingbiezhi.github.io/post/%E8%BD%AC%E4%BD%BF%E7%94%A8grafana%E7%9B%91%E6%8E%A7go%E5%BA%94%E7%94%A8/</link>
+      <pubDate>Tue, 07 Aug 2018 12:17:15 +0800</pubDate>
+      
+      <guid>http://zhulingbiezhi.github.io/post/%E8%BD%AC%E4%BD%BF%E7%94%A8grafana%E7%9B%91%E6%8E%A7go%E5%BA%94%E7%94%A8/</guid>
+      <description>互联网企业背后，依靠的是成千上万台服务器日夜不停运转，以支撑其业务的运转，宕机对于互联网企业来说，代价是 沉重的，轻则影响用户体验，重则直接影</description>
+    </item>
+    
+  </channel>
+</rss>

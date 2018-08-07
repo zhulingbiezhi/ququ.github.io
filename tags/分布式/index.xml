@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>分布式 on 去去的blog - A super concise theme for Hugo</title>
+    <link>http://zhulingbiezhi.github.io/tags/%E5%88%86%E5%B8%83%E5%BC%8F/</link>
+    <description>Recent content in 分布式 on 去去的blog - A super concise theme for Hugo</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 07 Aug 2018 11:22:32 +0800</lastBuildDate>
+    
+	<atom:link href="http://zhulingbiezhi.github.io/tags/%E5%88%86%E5%B8%83%E5%BC%8F/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>【转】kubenetes调度详解</title>
+      <link>http://zhulingbiezhi.github.io/post/%E8%BD%ACkubenetes%E8%B0%83%E5%BA%A6%E8%AF%A6%E8%A7%A3/</link>
+      <pubDate>Tue, 07 Aug 2018 11:22:32 +0800</pubDate>
+      
+      <guid>http://zhulingbiezhi.github.io/post/%E8%BD%ACkubenetes%E8%B0%83%E5%BA%A6%E8%AF%A6%E8%A7%A3/</guid>
+      <description>【编者的话】优良的调度是分布式系统的核心。Scheduler调度器做为Kubernetes三大核心组件之一， 承载着整个集群资源的调度功能，其</description>
+    </item>
+    
+    <item>
+      <title>【转】Kubeadm原理解析</title>
+      <link>http://zhulingbiezhi.github.io/post/%E8%BD%ACkubeadm%E5%8E%9F%E7%90%86%E8%A7%A3%E6%9E%90/</link>
+      <pubDate>Tue, 07 Aug 2018 11:19:03 +0800</pubDate>
+      
+      <guid>http://zhulingbiezhi.github.io/post/%E8%BD%ACkubeadm%E5%8E%9F%E7%90%86%E8%A7%A3%E6%9E%90/</guid>
+      <description>【编者的话】根据所处环境的不同，Kubernetes集群的安装部署有多种不同的方式。如果是在公有云上还好，一般都会提供相应的安装方案。如果是</description>
+    </item>
+    
+    <item>
+      <title>【原】etcd3-server-API</title>
+      <link>http://zhulingbiezhi.github.io/post/%E5%8E%9Fetcd3-server-api/</link>
+      <pubDate>Mon, 06 Aug 2018 11:18:15 +0800</pubDate>
+      
+      <guid>http://zhulingbiezhi.github.io/post/%E5%8E%9Fetcd3-server-api/</guid>
+      <description>etcd3项目分为两部分，一是etcd clientv3，一是etcd3 server。etcd3与etcd2是不同的代码实现，同时etcd3 s</description>
+    </item>
+    
+    <item>
+      <title>【转】Etcd服务端实现</title>
+      <link>http://zhulingbiezhi.github.io/post/%E8%BD%ACetcd%E6%9C%8D%E5%8A%A1%E7%AB%AF%E5%AE%9E%E7%8E%B0/</link>
+      <pubDate>Mon, 06 Aug 2018 11:18:15 +0800</pubDate>
+      
+      <guid>http://zhulingbiezhi.github.io/post/%E8%BD%ACetcd%E6%9C%8D%E5%8A%A1%E7%AB%AF%E5%AE%9E%E7%8E%B0/</guid>
+      <description>7.1 Etcd启动 Etcd有多种启动方式，我们从最简单的方式入手，也就是从embed的etcd.go开始启动，最后会启动EtcdServer。 先</description>
+    </item>
+    
+  </channel>
+</rss>
