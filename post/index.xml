@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Even - A super concise theme for Hugo</title>
+    <link>http://zhulingbiezhi.github.io/post/</link>
+    <description>Recent content in Posts on Even - A super concise theme for Hugo</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 06 Aug 2018 11:18:15 +0800</lastBuildDate>
+    
+	<atom:link href="http://zhulingbiezhi.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>【转】Etcd服务端实现</title>
+      <link>http://zhulingbiezhi.github.io/post/etcd%E6%9C%8D%E5%8A%A1%E7%AB%AF%E5%AE%9E%E7%8E%B0/</link>
+      <pubDate>Mon, 06 Aug 2018 11:18:15 +0800</pubDate>
+      
+      <guid>http://zhulingbiezhi.github.io/post/etcd%E6%9C%8D%E5%8A%A1%E7%AB%AF%E5%AE%9E%E7%8E%B0/</guid>
+      <description>7.1 Etcd启动 Etcd有多种启动方式，我们从最简单的方式入手，也就是从embed的etcd.go开始启动，最后会启动EtcdServer。 先</description>
+    </item>
+    
+    <item>
+      <title>【转】强大的Kubernetes包管理工具</title>
+      <link>http://zhulingbiezhi.github.io/post/kubenetes_helm/</link>
+      <pubDate>Mon, 06 Aug 2018 11:18:15 +0800</pubDate>
+      
+      <guid>http://zhulingbiezhi.github.io/post/kubenetes_helm/</guid>
+      <description>【编者的话】Helm是Kubernetes生态系统中的一个软件包管理工具。本文将介绍为何要使用Helm进行Kubernetes软件包管理，澄</description>
+    </item>
+    
+    <item>
+      <title>【转】浅谈TCP优化</title>
+      <link>http://zhulingbiezhi.github.io/post/%E6%B5%85%E8%B0%88tcp%E4%BC%98%E5%8C%96/</link>
+      <pubDate>Mon, 06 Aug 2018 11:18:15 +0800</pubDate>
+      
+      <guid>http://zhulingbiezhi.github.io/post/%E6%B5%85%E8%B0%88tcp%E4%BC%98%E5%8C%96/</guid>
+      <description>浅谈TCP优化 很多人常常对TCP优化有一种雾里看花的感觉，实际上只要理解了TCP的运行方式就能掀开它的神秘面纱。Ilya Grigorik 在「High Performance Browser N</description>
+    </item>
+    
+  </channel>
+</rss>
