@@ -107,13 +107,6 @@
   </url>
   
   <url>
-    <loc>http://zhulingbiezhi.github.io/categories/kubenets/</loc>
-    <lastmod>2018-08-07T11:19:03+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>http://zhulingbiezhi.github.io/tags/kubenets/</loc>
     <lastmod>2018-08-07T11:19:03+08:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -121,8 +114,8 @@
   </url>
   
   <url>
-    <loc>http://zhulingbiezhi.github.io/categories/kubernetes/</loc>
-    <lastmod>2018-08-07T11:22:32+08:00</lastmod>
+    <loc>http://zhulingbiezhi.github.io/categories/kubenets/</loc>
+    <lastmod>2018-08-07T11:19:03+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
@@ -135,8 +128,8 @@
   </url>
   
   <url>
-    <loc>http://zhulingbiezhi.github.io/categories/monitor/</loc>
-    <lastmod>2018-08-07T12:17:15+08:00</lastmod>
+    <loc>http://zhulingbiezhi.github.io/categories/kubernetes/</loc>
+    <lastmod>2018-08-07T11:22:32+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
@@ -149,14 +142,21 @@
   </url>
   
   <url>
-    <loc>http://zhulingbiezhi.github.io/categories/mysql/</loc>
-    <lastmod>2018-08-07T11:35:45+08:00</lastmod>
+    <loc>http://zhulingbiezhi.github.io/categories/monitor/</loc>
+    <lastmod>2018-08-07T12:17:15+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://zhulingbiezhi.github.io/tags/mysql/</loc>
+    <lastmod>2018-08-07T11:35:45+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://zhulingbiezhi.github.io/categories/mysql/</loc>
     <lastmod>2018-08-07T11:35:45+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
@@ -184,13 +184,6 @@
   </url>
   
   <url>
-    <loc>http://zhulingbiezhi.github.io/categories/websocket/</loc>
-    <lastmod>2018-08-07T11:44:00+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>http://zhulingbiezhi.github.io/tags/websocket/</loc>
     <lastmod>2018-08-07T11:44:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -198,14 +191,21 @@
   </url>
   
   <url>
-    <loc>http://zhulingbiezhi.github.io/categories/%E5%88%86%E5%B8%83%E5%BC%8F/</loc>
-    <lastmod>2018-08-07T15:04:54+08:00</lastmod>
+    <loc>http://zhulingbiezhi.github.io/categories/websocket/</loc>
+    <lastmod>2018-08-07T11:44:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://zhulingbiezhi.github.io/tags/%E5%88%86%E5%B8%83%E5%BC%8F/</loc>
+    <lastmod>2018-08-07T15:04:54+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://zhulingbiezhi.github.io/categories/%E5%88%86%E5%B8%83%E5%BC%8F/</loc>
     <lastmod>2018-08-07T15:04:54+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
@@ -219,14 +219,14 @@
   </url>
   
   <url>
-    <loc>http://zhulingbiezhi.github.io/categories/%E7%BD%91%E7%BB%9C/</loc>
+    <loc>http://zhulingbiezhi.github.io/tags/%E7%BD%91%E7%BB%9C/</loc>
     <lastmod>2018-08-06T11:18:15+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://zhulingbiezhi.github.io/tags/%E7%BD%91%E7%BB%9C/</loc>
+    <loc>http://zhulingbiezhi.github.io/categories/%E7%BD%91%E7%BB%9C/</loc>
     <lastmod>2018-08-06T11:18:15+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
