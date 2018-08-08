@@ -215,7 +215,7 @@
 
 <p>如果不需要对集群做任何定制化的配置，直接在master节点上执行该命令即可。该命令的内部流程如下图所示：</p>
 
-<p><a href="http://dockone.io/uploads/article/20180328/d6705a59d2097d54e388d1177438f509.png"><img src="http://dockone.io/uploads/article/20180328/d6705a59d2097d54e388d1177438f509.png" alt="1.png" title="1.png" /></a></p>
+<p><a href="/img/20180808/d6705a59d2097d54e388d1177438f509.png"><img src="/img/20180808/d6705a59d2097d54e388d1177438f509.png" alt="1.png" title="1.png" /></a></p>
 
 <p>在上图的第④步完成的时候，正常情况下，Kubernetes的master的各组件便启动起来了。这里会有一个雷区：由于kubeadm是以static pod的方式启动master各组件，这就涉及到组件容器镜像的拉取。kubeadm默认的镜像源是从Google的gcr.io镜像库，因此需要科学合理地去解决如何访问该镜像库的问题，或者为kubeadm指定可用的第三方镜像库（据个人所知，如下镜像库可用，比如要拉取apiserver的1.9.6版本镜像，地址为：registry.cn-hangzhou.aliyuncs.com/google_containers/kube-apiserver-amd64:v1.9.6）。由于该雷区的存在，可能会使得kubeadm的便捷性大打折扣。</p>
 
@@ -231,7 +231,7 @@
 
 <p>join的流程就比较简单了，它主要用来启动节点并加入集群。该命令的内部流程如下图所示：</p>
 
-<p><a href="http://dockone.io/uploads/article/20180328/a0d1e65f00f7ddab0e082ac41dc763fd.png"><img src="http://dockone.io/uploads/article/20180328/a0d1e65f00f7ddab0e082ac41dc763fd.png" alt="2.png" title="2.png" /></a></p>
+<p><a href="/img/20180808/a0d1e65f00f7ddab0e082ac41dc763fd.png"><img src="/img/20180808/a0d1e65f00f7ddab0e082ac41dc763fd.png" alt="2.png" title="2.png" /></a></p>
 
 <p>在node节点加入集群时，需要建立双向信任，它分成两部分：discovery（node信任master）和TLS bootstrap（master信任node）。</p>
 
@@ -267,13 +267,13 @@
 
 <p>内置的证书生成流程如下图所示：</p>
 
-<p><a href="http://dockone.io/uploads/article/20180328/312055eea5c125ced3904692676160d8.png"><img src="http://dockone.io/uploads/article/20180328/312055eea5c125ced3904692676160d8.png" alt="3.png" title="3.png" /></a></p>
+<p><a href="/img/20180808/312055eea5c125ced3904692676160d8.png"><img src="/img/20180808/312055eea5c125ced3904692676160d8.png" alt="3.png" title="3.png" /></a></p>
 
 <p>注：对于上图中的front proxy，没有在官方文档中找到明确的说明，我的理解应该指的就是kubectl proxy。用户可以通过这个proxy来间接的访问apiserver，因此与它相关的通信也是需要进行加密认证的。</p>
 
 <p>kubeadm安装完集群后，生成的部分证书和密钥文件如下图所示。图中未显示etcd相关的证书，为etcd生成证书的功能是在1.10版本实现的。</p>
 
-<p><a href="http://dockone.io/uploads/article/20180328/846ad76ed383949bee4337218b30bc9f.png"><img src="http://dockone.io/uploads/article/20180328/846ad76ed383949bee4337218b30bc9f.png" alt="4.png" title="4.png" /></a></p>
+<p><a href="/img/20180808/846ad76ed383949bee4337218b30bc9f.png"><img src="/img/20180808/846ad76ed383949bee4337218b30bc9f.png" alt="4.png" title="4.png" /></a></p>
 
 <h3 id="3-self-hosting模式">3. self-hosting模式</h3>
 
@@ -283,7 +283,7 @@
 
 <p>在self-hosting模式下，master组件是以DaemonSet对象来管理的。self-hosting模式的启动过程如下图所示（该图摘自社区@luxas的讲稿）：</p>
 
-<p><a href="http://dockone.io/uploads/article/20180328/608287a4f392d884fbee1da221774e72.png"><img src="http://dockone.io/uploads/article/20180328/608287a4f392d884fbee1da221774e72.png" alt="5.png" title="5.png" /></a></p>
+<p><a href="/img/20180808/608287a4f392d884fbee1da221774e72.png"><img src="/img/20180808/608287a4f392d884fbee1da221774e72.png" alt="5.png" title="5.png" /></a></p>
 
 <p>该流程描述如下：</p>
 
@@ -301,7 +301,7 @@
 
 <p>在self-hosting模式下，查看DaemonSet可以看到如下self-hosted的master组件：</p>
 
-<p><a href="http://dockone.io/uploads/article/20180328/9949a4a68d783b35e786691990e927b9.png"><img src="http://dockone.io/uploads/article/20180328/9949a4a68d783b35e786691990e927b9.png" alt="6.png" title="6.png" /></a></p>
+<p><a href="/img/20180808/9949a4a68d783b35e786691990e927b9.png"><img src="/img/20180808/9949a4a68d783b35e786691990e927b9.png" alt="6.png" title="6.png" /></a></p>
 
 <h3 id="4-如何支持ha">4. 如何支持HA</h3>
 
@@ -309,7 +309,7 @@
 
 <p>其思路如下图所示（该图摘自社区@luxas的讲稿）：</p>
 
-<p><a href="http://dockone.io/uploads/article/20180328/6250dbe4faaca9f7ccc87160dc8cfc2c.png"><img src="http://dockone.io/uploads/article/20180328/6250dbe4faaca9f7ccc87160dc8cfc2c.png" alt="7.png" title="7.png" /></a></p>
+<p><a href="/img/20180808/6250dbe4faaca9f7ccc87160dc8cfc2c.png"><img src="/img/20180808/6250dbe4faaca9f7ccc87160dc8cfc2c.png" alt="7.png" title="7.png" /></a></p>
 
 <p>主要步骤：</p>
 
@@ -335,11 +335,11 @@
 
 <p>首先可以通过<code>kubeadm upgrade plan</code>命令查看升级计划，该命令会输出可升级的最新目标版本。</p>
 
-<p><a href="http://dockone.io/uploads/article/20180328/2723b7d6d2c4f88be6fc91500e34cb41.png"><img src="http://dockone.io/uploads/article/20180328/2723b7d6d2c4f88be6fc91500e34cb41.png" alt="8.png" title="8.png" /></a></p>
+<p><a href="/img/20180808/2723b7d6d2c4f88be6fc91500e34cb41.png"><img src="/img/20180808/2723b7d6d2c4f88be6fc91500e34cb41.png" alt="8.png" title="8.png" /></a></p>
 
 <p>在上图中可以看到可升级的1.9系列最新版本为1.9.6。需要注意的有两点：1. 要执行升级，需要先将kubeadm升级到对应的版本；2. kubeadm并不负责kubelet的升级，需要在升级完master组件后，手工对kubelet进行升级。</p>
 
-<p><a href="http://dockone.io/uploads/article/20180328/68d9e704d4c40430d94109c3ad4f262f.png"><img src="http://dockone.io/uploads/article/20180328/68d9e704d4c40430d94109c3ad4f262f.png" alt="9.png" title="9.png" /></a></p>
+<p><a href="/img/20180808/68d9e704d4c40430d94109c3ad4f262f.png"><img src="/img/20180808/68d9e704d4c40430d94109c3ad4f262f.png" alt="9.png" title="9.png" /></a></p>
 
 <p>在上图中可以看到可升级的最新稳定版本为1.10.0。注意点同上。</p>
 

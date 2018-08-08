@@ -107,6 +107,13 @@
   </url>
   
   <url>
+    <loc>http://zhulingbiezhi.github.io/categories/etcd/</loc>
+    <lastmod>2018-08-06T11:18:15+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>http://zhulingbiezhi.github.io/tags/golang/</loc>
     <lastmod>2018-08-08T11:25:10+08:00</lastmod>
     <changefreq>weekly</changefreq>

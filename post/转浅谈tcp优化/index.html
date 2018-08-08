@@ -193,7 +193,7 @@
 
 <p>传输数据的时候，如果发送方传输的数据量超过了接收方的处理能力，那么接收方会出现丢包。为了避免出现此类问题，流量控制要求数据传输双方在每次交互时声明各自的接收窗口「rwnd」大小，用来表示自己最大能保存多少数据，这主要是针对接收方而言的，通俗点儿说就是让发送方知道接收方能吃几碗饭，如果窗口衰减到零，那么就说明吃饱了，必须消化消化，如果硬撑的话说不定会大小便失禁，那就是丢包了。</p>
 
-<p><a href="https://huoding.com/wp-content/uploads/2013/11/flow_control.png"><img src="https://huoding.com/wp-content/uploads/2013/11/flow_control.png" alt="Flow Control" /></a></p>
+<p>[<img src="/img/20180808/flow_control.png" alt="Flow Control" /></p>
 
 <p>Flow Control</p>
 
@@ -205,13 +205,13 @@
 
 <p>为了避免过载网络的问题，慢启动引入了拥塞窗口「cwnd」的概念，用来表示发送方在得到接收方确认前，最大允许传输的未经确认的数据。「cwnd」同「rwnd」相比不同的是：它只是发送方的一个内部参数，无需通知给接收方，其初始值往往比较小，然后随着数据包被接收方确认，窗口成倍扩大，有点类似于拳击比赛，开始时不了解敌情，往往是次拳试探，慢慢心里有底了，开始逐渐加大重拳进攻的力度。</p>
 
-<p><a href="https://huoding.com/wp-content/uploads/2013/11/slow_start.png"><img src="https://huoding.com/wp-content/uploads/2013/11/slow_start.png" alt="Slow Start" /></a></p>
+<p>[<img src="/img/20180808/slow_start.png" alt="Slow Start" /></p>
 
 <p>Slow Start</p>
 
 <p>在慢启动的过程中，随着「cwnd」的增加，可能会出现网络过载，其外在表现就是丢包，一旦出现此类问题，「cwnd」的大小会迅速衰减，以便网络能够缓过来。</p>
 
-<p><a href="https://huoding.com/wp-content/uploads/2013/11/congestion_avoidance.png"><img src="https://huoding.com/wp-content/uploads/2013/11/congestion_avoidance.png" alt="Congestion Avoidance" /></a></p>
+<p>[<img src="/img/20180808/congestion_avoidance.png" alt="Congestion Avoidance" /></p>
 
 <p>Congestion Avoidance</p>
 
@@ -278,13 +278,13 @@ net.ipv4.tcp_rmem = <MIN> <DEFAULT> <MAX></p>
 
 <p>先让我们看一下「cwnd」初始值比较小（等于4MSS）的时候会发生什么：</p>
 
-<p><a href="https://huoding.com/wp-content/uploads/2013/11/small_window.png"><img src="https://huoding.com/wp-content/uploads/2013/11/small_window.png" alt="Small Window" /></a></p>
+<p>[<img src="/img/20180808/small_window.png" alt="Small Window" /></p>
 
 <p>Small Window</p>
 
 <p>再看一下「cwnd」初始值比较大（大于15MSS）的时候又会如何：</p>
 
-<p><a href="https://huoding.com/wp-content/uploads/2013/11/big_window.png"><img src="https://huoding.com/wp-content/uploads/2013/11/big_window.png" alt="Big Window" /></a></p>
+<p>[<img src="/img/20180808/big_window.png" alt="Big Window" /></p>
 
 <p>Big Window</p>
 
@@ -304,7 +304,7 @@ net.ipv4.tcp_rmem = <MIN> <DEFAULT> <MAX></p>
 
 <p>有时候我们可能想检查一下目标服务器的「cwnd」初始值设置，此时可以数包：</p>
 
-<p><a href="https://huoding.com/wp-content/uploads/2013/11/test_initcwnd.png"><img src="https://huoding.com/wp-content/uploads/2013/11/test_initcwnd.png" alt="Test Initcwnd" /></a></p>
+<p>[<img src="/img/20180808/test_initcwnd.png" alt="Test Initcwnd" /></p>
 
 <p>Test Initcwnd</p>
 

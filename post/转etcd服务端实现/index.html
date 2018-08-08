@@ -151,7 +151,7 @@
         <span class="post-time"> 2018-08-06 </span>
         <div class="post-category">
             
-              <a href="/categories/%E8%BD%AC%E8%BD%BD/"> 转载 </a>
+              <a href="/categories/etcd/"> etcd </a>
             
           </div>
         
@@ -251,7 +251,7 @@ e.Server.Start()
 
 <p>EtcdServer位于etcdserver/server.go，定义了Server接口和EtcdServer对象。EtcdServer从逻辑上讲代表了一个完整的Etcd服务。</p>
 
-<p><img src="http://www.ituring.com.cn/figures/2017/Etcd/022.png" alt="{%}" /></p>
+<p><img src="/img/20180808/022.png" alt="{%}" /></p>
 
 <p><strong>图7.1　Etcd服务端的功能示意图</strong></p>
 
@@ -443,7 +443,7 @@ e.Server.Start()
 
 <p>对于POST，PUT，DELETE命令，走下述Propose流程处理。</p>
 
-<p><img src="http://www.ituring.com.cn/figures/2017/Etcd/023.png" alt="" /></p>
+<p><img src="/img/20180808/023.png" alt="" /></p>
 
 <p><strong>图7.2　Propose流程示意图</strong></p>
 
@@ -852,7 +852,7 @@ cl.Recover(api.UpdateCapability)
 
 <p>当写事务已经被集群中超过半数的raft确认过并且保存到WAL日志后，raftNode会触发apply()信道被选择，进而执行applyAll方法进行处理，applyAll方法中会执行真正的写操作修改Etcd数据库内容。</p>
 
-<p><img src="http://www.ituring.com.cn/figures/2017/Etcd/024.png" alt="{%}" /></p>
+<p><img src="/img/20180808/024.png" alt="{%}" /></p>
 
 <p><strong>图7.3　apply调用流程</strong></p>
 
@@ -1088,7 +1088,7 @@ if m.ID != s.id {
 
 <p>startPeer启动新增的成员，新成员启动后就会加入到集群并准备接收集群Raft消息，开始正常工作。</p>
 
-<p><img src="http://www.ituring.com.cn/figures/2017/Etcd/025.png" alt="{%}" /></p>
+<p><img src="/img/20180808/025.png" alt="{%}" /></p>
 
 <p><strong>图7.4　添加成员流程示意图</strong></p>
 
@@ -1096,7 +1096,7 @@ if m.ID != s.id {
 
 <p><strong>删除集群成员。</strong></p>
 
-<p><img src="http://www.ituring.com.cn/figures/2017/Etcd/026.png" alt="{%}" /></p>
+<p><img src="/img/20180808/026.png" alt="{%}" /></p>
 
 <p><strong>图7.5　删除成员流程示意图</strong></p>
 
@@ -1366,7 +1366,7 @@ return n.Step(ctx, pb.Message{Type: pb.MsgProp, Entries: []pb.Entry{{Type: pb.En
 }
 </code></pre>
 
-<p><img src="http://www.ituring.com.cn/figures/2017/Etcd/027.png" alt="" /></p>
+<p><img src="/img/20180808/027.png" alt="" /></p>
 
 <p><strong>图7.5　apply信道数据流</strong></p>
 

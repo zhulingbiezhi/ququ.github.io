@@ -217,7 +217,7 @@
 
 <p>Kubernetes基本架构如下：</p>
 
-<p><a href="http://dockone.io/uploads/article/20171115/ff7d575058bcf7bc62bf4de9064b12a6.png"><img src="http://dockone.io/uploads/article/20171115/ff7d575058bcf7bc62bf4de9064b12a6.png" alt="k8s.png" title="k8s.png" /></a></p>
+<p><a href="/img/20180808/ff7d575058bcf7bc62bf4de9064b12a6.png"><img src="/img/20180808/ff7d575058bcf7bc62bf4de9064b12a6.png" alt="k8s.png" title="k8s.png" /></a></p>
 
 <p>其中， Controller Manager主要用于管理计算节点（Node Controller）以及Pod副本（Replication Controller）等，Scheduler根据特定的算法和策略调度Pod到具体的计算节点，Kubelet通过apiserver或者监控本地的配置文件（eg. Kubeadm创建的Kuernetes集群），通过docker daemon创建Pod的container。</p>
 
@@ -231,7 +231,7 @@
 
 <p>普通用户可以把Scheduler可理解为一个黑盒，黑盒的输入为待调度的Pod和全部计算节点的信息，经过黑盒内部的调度算法和策略处理，输出为最优的节点，而后将Pod调度该节点上 。</p>
 
-<p><a href="http://dockone.io/uploads/article/20171115/f438b529c8f625007c58b8a97afd76fd.png"><img src="http://dockone.io/uploads/article/20171115/f438b529c8f625007c58b8a97afd76fd.png" alt="Scheduler-process.png" title="Scheduler-process.png" /></a></p>
+<p><a href="/img/20180808/f438b529c8f625007c58b8a97afd76fd.png"><img src="/img/20180808/f438b529c8f625007c58b8a97afd76fd.png" alt="Scheduler-process.png" title="Scheduler-process.png" /></a></p>
 
 <p>这个过程看起来似乎比较简单，但实际生产环境的调度过程中，有很多问题需要考虑：</p>
 
@@ -278,7 +278,7 @@
 
 <p>调度过程的简单图示如下：</p>
 
-<p><a href="http://dockone.io/uploads/article/20171115/5e26b4fc68a3177e9f88e6cf8be65275.png"><img src="http://dockone.io/uploads/article/20171115/5e26b4fc68a3177e9f88e6cf8be65275.png" alt="Scheduler.png" title="Scheduler.png" /></a></p>
+<p><a href="/img/20180808/5e26b4fc68a3177e9f88e6cf8be65275.png"><img src="/img/20180808/5e26b4fc68a3177e9f88e6cf8be65275.png" alt="Scheduler.png" title="Scheduler.png" /></a></p>
 
 <p>具体的调度过程，一般如下：</p>
 
@@ -304,7 +304,7 @@
 
 <p>预选（Predicates）与优选（Priorites）的策略罗列如下：</p>
 
-<p><a href="http://dockone.io/uploads/article/20171115/43f41e88729cfa4ce84d711dd3ef644c.png"><img src="http://dockone.io/uploads/article/20171115/43f41e88729cfa4ce84d711dd3ef644c.png" alt="pre-pro.png" title="pre-pro.png" /></a></p>
+<p><a href="/img/20180808/43f41e88729cfa4ce84d711dd3ef644c.png"><img src="/img/20180808/43f41e88729cfa4ce84d711dd3ef644c.png" alt="pre-pro.png" title="pre-pro.png" /></a></p>
 
 <p>接下来，分别介绍调度器Scheduler的预选与优选两个阶段。</p>
 
@@ -315,7 +315,7 @@
 <ul>
 <li><p>NoDiskConflict：pod所需的卷是否和节点已存在的卷冲突。如果节点已经挂载了某个卷，其它同样使用这个卷的pod不能再调度到这个主机上。GCE、Amazon EBS与Ceph RBD的规则如下：</p>
 
-<p><a href="http://dockone.io/uploads/article/20171115/ce74a17a6ed587ea43c1ddff17c7d6be.png"><img src="http://dockone.io/uploads/article/20171115/ce74a17a6ed587ea43c1ddff17c7d6be.png" alt="nodiskconflict.png" title="nodiskconflict.png" /></a></p></li>
+<p><a href="/img/20180808/ce74a17a6ed587ea43c1ddff17c7d6be.png"><img src="/img/20180808/ce74a17a6ed587ea43c1ddff17c7d6be.png" alt="nodiskconflict.png" title="nodiskconflict.png" /></a></p></li>
 
 <li><p>NoVolumeZoneConflict：检查给定的zone限制前提下，检查如果在此主机上部署Pod是否存在卷冲突。假定一些volumes可能有zone调度约束， VolumeZonePredicate根据volumes自身需求来评估pod是否满足条件。必要条件就是任何volumes的zone-labels必须与节点上的zone-labels完全匹配。节点上可以有多个zone-labels的约束（比如一个假设的复制卷可能会允许进行区域范围内的访问）。目前，这个只对PersistentVolumeClaims支持，而且只在PersistentVolume的范围内查找标签。处理在Pod的属性中定义的volumes（即不使用PersistentVolume）有可能会变得更加困难，因为要在调度的过程中确定volume的zone，这很有可能会需要调用云提供商。</p></li>
 
@@ -374,7 +374,7 @@ PodSelectorMatches：检查主机的标签是否满足Pod的 selector。包括No
 
 <p>cpu((capacity – sum(requested)) * 10 / capacity) + memory((capacity – sum(requested)) * 10 / capacity) / 2</p>
 
-<p><a href="http://dockone.io/uploads/article/20171115/6e48024d29c981bd456ec5f48efa0ee5.png"><img src="http://dockone.io/uploads/article/20171115/6e48024d29c981bd456ec5f48efa0ee5.png" alt="unused-resource.png" title="unused-resource.png" /></a></p>
+<p><a href="/img/20180808/6e48024d29c981bd456ec5f48efa0ee5.png"><img src="/img/20180808/6e48024d29c981bd456ec5f48efa0ee5.png" alt="unused-resource.png" title="unused-resource.png" /></a></p>
 
 <p>注：10 表示非常合适，0 表示完全不合适。</p>
 
@@ -404,7 +404,7 @@ PodSelectorMatches：检查主机的标签是否满足Pod的 selector。包括No
 <ul>
 <li><p>ImageLocalityPriority：根据Node上是否存在一个pod的容器运行所需镜像大小对优先级打分，分值为0-10。遍历全部Node，如果某个Node上pod容器所需的镜像一个都不存在，分值为0；如果Node上存在Pod容器部分所需镜像，则根据这些镜像的大小来决定分值，镜像越大，分值就越高；如果Node上存在pod所需全部镜像，分值为10。</p>
 
-<p><a href="http://dockone.io/uploads/article/20171115/9876d6fdf2bfac8eafd194fdd1f78d4e.png"><img src="http://dockone.io/uploads/article/20171115/9876d6fdf2bfac8eafd194fdd1f78d4e.png" alt="total_resource.png" title="total_resource.png" /></a></p>
+<p><a href="/img/20180808/9876d6fdf2bfac8eafd194fdd1f78d4e.png"><img src="/img/20180808/9876d6fdf2bfac8eafd194fdd1f78d4e.png" alt="total_resource.png" title="total_resource.png" /></a></p>
 
 <p>注：10 表示非常合适，0 表示完全不合适。</p></li>
 
@@ -415,7 +415,7 @@ PodSelectorMatches：检查主机的标签是否满足Pod的 selector。包括No
 
 <p>要想获得所有节点最终的权重分值，就要先计算每个优先级函数对应该节点的分值，然后计算总和。因此不管过程如何，如果有 N 个节点，M 个优先级函数，一定会计算 M*N 个中间值，构成一个二维表格：</p>
 
-<p><a href="http://dockone.io/uploads/article/20171115/7e997312775f881a4fd16bbdc192d51b.png"><img src="http://dockone.io/uploads/article/20171115/7e997312775f881a4fd16bbdc192d51b.png" alt="score.png" title="score.png" /></a></p>
+<p><a href="/img/20180808/7e997312775f881a4fd16bbdc192d51b.png"><img src="/img/20180808/7e997312775f881a4fd16bbdc192d51b.png" alt="score.png" title="score.png" /></a></p>
 
 <p>最后，会把表格中按照节点把优先级函数的权重列表相加，得到最终节点的分值。上面代码就是这个过程，中间过程可以并发计算（下文图中的workQueue），以加快速度。</p>
 
@@ -513,7 +513,7 @@ done 
 
 <p>可通过kubectl describe pod pod_name查看一个Pod采用的调度器，例如：</p>
 
-<p><a href="http://dockone.io/uploads/article/20171115/aba710ea122e1d74e61db3d235de43ce.png"><img src="http://dockone.io/uploads/article/20171115/aba710ea122e1d74e61db3d235de43ce.png" alt="describe-k8s.png" title="describe-k8s.png" /></a></p>
+<p><a href="/img/20180808/aba710ea122e1d74e61db3d235de43ce.png"><img src="/img/20180808/aba710ea122e1d74e61db3d235de43ce.png" alt="describe-k8s.png" title="describe-k8s.png" /></a></p>
 
 <h3 id="pod优先级-priority-和抢占-preemption">Pod优先级（Priority）和抢占（Preemption）</h3>
 
@@ -558,7 +558,7 @@ priorityClassName: high-priority
 
 <p>回过头来，再重新看一下Pod的调度过程，也许会清晰很多。如下图示例：</p>
 
-<p><a href="http://dockone.io/uploads/article/20171115/512961a5c5b56a1f8650e5ea83690ad0.png"><img src="http://dockone.io/uploads/article/20171115/512961a5c5b56a1f8650e5ea83690ad0.png" alt="pod-scheduler.png" title="pod-scheduler.png" /></a></p>
+<p><a href="/img/20180808/512961a5c5b56a1f8650e5ea83690ad0.png"><img src="/img/20180808/512961a5c5b56a1f8650e5ea83690ad0.png" alt="pod-scheduler.png" title="pod-scheduler.png" /></a></p>
 
 <p>注：使用 workQueue 来并行运行检查，并发数最大是 16。对应源码示例：orkqueue.Parallelize(16, len(nodes), checkNode)。</p>
 

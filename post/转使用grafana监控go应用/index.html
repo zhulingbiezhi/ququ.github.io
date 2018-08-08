@@ -231,14 +231,14 @@
 
 <p>我们在浏览器访问 8083端口地址，如下图</p>
 
-<p><img src="http://og0usnhfv.bkt.clouddn.com/monitor-go-1.png" alt="go-monitor-1" /></p>
+<p><img src="/img/20180808/monitor-go-1.png" alt="go-monitor-1" /></p>
 
 <p>接着我们在Query框输入以下命令，完成测试数据库的创建</p>
 
 <pre><code>CREATE DATABASE &quot;helloWorld&quot;
 </code></pre>
 
-<p><img src="http://og0usnhfv.bkt.clouddn.com/monitor-go-2.png" alt="go-monitor-2" /></p>
+<p><img src="/img/20180808/monitor-go-2.png" alt="go-monitor-2" /></p>
 
 <p>这样我们的测试数据库就创建完成了。</p>
 
@@ -248,15 +248,15 @@
 
 <p>用户名和密码默认为 admin / admin</p>
 
-<p><img src="http://og0usnhfv.bkt.clouddn.com/monitor-go-3.png" alt="go-monitor-3" /></p>
+<p><img src="/img/20180808/monitor-go-3.png" alt="go-monitor-3" /></p>
 
 <p>登陆成功后，进入主页面</p>
 
-<p><img src="http://og0usnhfv.bkt.clouddn.com/monitor-go-4.png" alt="go-monitor-4" /></p>
+<p><img src="/img/20180808/monitor-go-4.png" alt="go-monitor-4" /></p>
 
 <p>在上面的主页面，点击一下 “Add data source”的绿色按钮，点击后，进入创建数据源的信息填写表单：</p>
 
-<p><img src="http://og0usnhfv.bkt.clouddn.com/monitor-go-5.png" alt="go-monitor-5" /></p>
+<p><img src="/img/20180808/monitor-go-5.png" alt="go-monitor-5" /></p>
 
 <p>现在，我们填写我们influxDB的一些关键信息，如上图，然后点击“保存” ，这样我们在Grafana就完成了数据源的关联工作。</p>
 
@@ -326,31 +326,31 @@ func main() {
 
 <p>一旦我们的DataSource完成配置后，在Grafana我们可以开始造一个监控面板，我们继续点击左上角的logo图案，在Dashboards中 选择<code>New</code>,来创建一个新的panel，如下图：</p>
 
-<p><img src="http://og0usnhfv.bkt.clouddn.com/monitor-go-6.png" alt="go-monitor-6" /></p>
+<p><img src="/img/20180808/monitor-go-6.png" alt="go-monitor-6" /></p>
 
 <p>然后我们选择“Graph”，如下图：</p>
 
-<p><img src="http://og0usnhfv.bkt.clouddn.com/monitor-go-7.png" alt="go-monitor-7" /></p>
+<p><img src="/img/20180808/monitor-go-7.png" alt="go-monitor-7" /></p>
 
 <p>当panel出现后，我们鼠标点击标题，当出现一个选择创建的时候，我们继续选择“Edit”, 如下图：</p>
 
-<p><img src="http://og0usnhfv.bkt.clouddn.com/monitor-go-8.png" alt="go-monitor-8" /></p>
+<p><img src="/img/20180808/monitor-go-8.png" alt="go-monitor-8" /></p>
 
 <p>接下来，我们需要创建查询Query的组合语句，如下图</p>
 
-<p><img src="http://og0usnhfv.bkt.clouddn.com/monitor-go-10.png" alt="go-monitor-10" /></p>
+<p><img src="/img/20180808/monitor-go-10.png" alt="go-monitor-10" /></p>
 
 <p>注意：如果我们想更多了解我们有哪些的指标项，我们还可以再浏览器进行相关查询，例如：</p>
 
-<p><img src="http://og0usnhfv.bkt.clouddn.com/monitor-go-9.png" alt="go-monitor-9" /></p>
+<p><img src="/img/20180808/monitor-go-9.png" alt="go-monitor-9" /></p>
 
 <p>再设置X轴和Y轴的数据展示单位</p>
 
-<p><img src="http://og0usnhfv.bkt.clouddn.com/monitor-go-11.png" alt="go-monitor-11" /></p>
+<p><img src="/img/20180808/monitor-go-11.png" alt="go-monitor-11" /></p>
 
 <p>上述主要的设置完成后，保存并刷新页面，可以看到我们的监控数据已经出现在我们的监控面板上：</p>
 
-<p><img src="http://og0usnhfv.bkt.clouddn.com/monitor-go-12.png" alt="go-monitor-12" /></p>
+<p><img src="/img/20180808/monitor-go-12.png" alt="go-monitor-12" /></p>
 
     </div>
 

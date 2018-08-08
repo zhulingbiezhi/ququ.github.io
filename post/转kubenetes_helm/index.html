@@ -207,7 +207,7 @@
 
 <p>以下面的WordPress应用程序为例，涉及到多个Kubernetes API对象，这些Kubernetes API对象分散在多个Yaml文件中。</p>
 
-<p><a href="http://dockone.io/uploads/article/20180501/b5903b6ce59d8916b610e22809084f4d.png"><img src="http://dockone.io/uploads/article/20180501/b5903b6ce59d8916b610e22809084f4d.png" alt="1.png" title="1.png" /></a></p>
+<p><a href="/img/20180808/b5903b6ce59d8916b610e22809084f4d.png"><img src="/img/20180808/b5903b6ce59d8916b610e22809084f4d.png" alt="1.png" title="1.png" /></a></p>
 
 <p><em>图1： WordPress应用程序中涉及到的Kubernetes API对象</em></p>
 
@@ -259,7 +259,7 @@
 
 <p>下面这张图描述了Helm的几个关键组件Helm（客户端）、Tiller（服务器）、Repository（Chart软件仓库）、Chart（软件包）之前的关系。</p>
 
-<p><a href="http://dockone.io/uploads/article/20180501/d460269f6b1369472a51bdd48400343a.png"><img src="http://dockone.io/uploads/article/20180501/d460269f6b1369472a51bdd48400343a.png" alt="2.png" title="2.png" /></a></p>
+<p><a href="/img/20180808/d460269f6b1369472a51bdd48400343a.png"><img src="/img/20180808/d460269f6b1369472a51bdd48400343a.png" alt="2.png" title="2.png" /></a></p>
 
 <p><em>图2： Helm软件架构</em></p>
 
@@ -499,7 +499,7 @@ testapi 3               Mon Apr 16 10:48:20 2018      
 <p>A：采用Helm可以把零散的Kubernetes应用配置文件作为一个Chart管理，Chart源码可以和源代码一起放到Git库中管理。Helm还简了在CI/CD Pipeline的软件部署流程。通过把Chart参数化，可以在测试环境和生产环境可以采用不同的Chart参数配置。<br />
 下图是采用了Helm的一个CI/CD流程：</p>
 
-<p><a href="http://dockone.io/uploads/article/20180501/278fd00686afbf76fbfa69bf4e7c8307.png"><img src="http://dockone.io/uploads/article/20180501/278fd00686afbf76fbfa69bf4e7c8307.png" alt="3.png" title="3.png" /></a></p>
+<p><a href="/img/20180808/278fd00686afbf76fbfa69bf4e7c8307.png"><img src="/img/20180808/278fd00686afbf76fbfa69bf4e7c8307.png" alt="3.png" title="3.png" /></a></p>
 </blockquote>
 
 <p><strong>Q：请问下多环境（test、staging、production）的业务配置如何管理呢？通过Heml打包ConfigMap吗，比如配置文件更新，也要重新打Chart包吗？谢谢，这块我比较乱。</strong></p>

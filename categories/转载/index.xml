@@ -93,15 +93,6 @@
     </item>
     
     <item>
-      <title>【转】Etcd服务端实现</title>
-      <link>http://zhulingbiezhi.github.io/post/%E8%BD%ACetcd%E6%9C%8D%E5%8A%A1%E7%AB%AF%E5%AE%9E%E7%8E%B0/</link>
-      <pubDate>Mon, 06 Aug 2018 11:18:15 +0800</pubDate>
-      
-      <guid>http://zhulingbiezhi.github.io/post/%E8%BD%ACetcd%E6%9C%8D%E5%8A%A1%E7%AB%AF%E5%AE%9E%E7%8E%B0/</guid>
-      <description>7.1 Etcd启动 Etcd有多种启动方式，我们从最简单的方式入手，也就是从embed的etcd.go开始启动，最后会启动EtcdServer。 先</description>
-    </item>
-    
-    <item>
       <title>【转】强大的Kubernetes包管理工具: Helm</title>
       <link>http://zhulingbiezhi.github.io/post/%E8%BD%ACkubenetes_helm/</link>
       <pubDate>Mon, 06 Aug 2018 11:18:15 +0800</pubDate>

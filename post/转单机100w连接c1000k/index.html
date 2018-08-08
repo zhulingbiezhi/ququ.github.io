@@ -222,7 +222,7 @@
 
 <p>总的来说，要完成这个目标，首先要考虑的就是系统能分配的资源是否满足100w并发的需求，然后逐步分解，比如内存够不够，文件描述符够不够，然后再往下看应该怎么满足，调整参数等。下面是我给予自己的理解绘制的一张思维导图，应该说还是十分简明清晰的。</p>
 
-<p><a href="https://upload-images.jianshu.io/upload_images/1627454-a000b629644fb619.png"><img src="https://upload-images.jianshu.io/upload_images/1627454-a000b629644fb619.png" alt="C1000k该如何达成的思考图.png" title="C1000k该如何达成的思考图.png" /></a></p>
+<p><a href="/img/20180808/1627454-a000b629644fb619.png"><img src="/img/20180808/1627454-a000b629644fb619.png" alt="C1000k该如何达成的思考图.png" title="C1000k该如何达成的思考图.png" /></a></p>
 
 <p>如果只是要简单的达成100w的并发，其实真的蛮简单的，只要把我这张图的第一部分的参数调整好基本上，内存稍大一点的台式机或笔记本都能很容易实现，欢迎各位看官看完之后自己去测试。</p>
 
@@ -240,7 +240,7 @@
 
 <p>使用命令查找内核中每个网络连接的内存配置参数：sysctl -A | grep net | grep mem</p>
 
-<p><a href="https://upload-images.jianshu.io/upload_images/1627454-db401a060617acda.png"><img src="https://upload-images.jianshu.io/upload_images/1627454-db401a060617acda.png" alt="1.png" title="1.png" /></a></p>
+<p><a href="/img/20180808/1627454-db401a060617acda.png"><img src="/img/20180808/1627454-db401a060617acda.png" alt="1.png" title="1.png" /></a></p>
 
 <p>上面第一组勾红的地方就是内核中任意一个网络连接（包括TCP、UDP等各种网络连接）能使用的最大和默认内存大小，单位是字节。</p>
 
@@ -294,7 +294,7 @@
 
 <p>3、用户级。ulimit -n是设置当前shell的当前用户所有进程能打开的最大文件数量，但是一个用户可能会同时通过多个shell连接到系统，所以还有一个针对用户的限制，这个值可以通过文件/etc/security/limits.conf查看，例如，我的机器是：</p>
 
-<p><a href="https://upload-images.jianshu.io/upload_images/1627454-8e5c0187e326d212.png"><img src="https://upload-images.jianshu.io/upload_images/1627454-8e5c0187e326d212.png" alt="1.png" title="1.png" /></a></p>
+<p><a href="/img/20180808/1627454-8e5c0187e326d212.png"><img src="/img/20180808/1627454-8e5c0187e326d212.png" alt="1.png" title="1.png" /></a></p>
 
 <p>*表示所有用户，上面两行语句表示，所有用户的软限制为65535，硬限制为65535，即表示所有用户能打开的最大文件数量为65535，不管它开启多少个shell。如果是具体哪个用户，可以单独修改，比如  root  soft nofile 10000，意思就是设定root的软上限为10000。软限制和硬限制的区别就是软限制可以在程序的进程中自行改变(突破限制)，而硬限制则不行(除非程序进程有root权限)，因此soft限制值必须&lt;=hard限制值！</p>
 
@@ -320,7 +320,7 @@
 
 <p>下图是linux内核源码文件的截图</p>
 
-<p><a href="https://upload-images.jianshu.io/upload_images/1627454-a08ecef6e6a1420d.png"><img src="https://upload-images.jianshu.io/upload_images/1627454-a08ecef6e6a1420d.png" alt="1.png" title="1.png" /></a></p>
+<p><a href="/img/20180808/1627454-a08ecef6e6a1420d.png"><img src="/img/20180808/1627454-a08ecef6e6a1420d.png" alt="1.png" title="1.png" /></a></p>
 
 <p>**<strong>▶ </strong>shell级调整**。</p>
 
@@ -396,11 +396,11 @@
 
 <p>/etc/sysctl.conf</p>
 
-<p><a href="https://upload-images.jianshu.io/upload_images/1627454-b8445a653f4c6750.png"><img src="https://upload-images.jianshu.io/upload_images/1627454-b8445a653f4c6750.png" alt="1.png" title="1.png" /></a></p>
+<p><a href="/img/20180808/1627454-b8445a653f4c6750.png"><img src="/img/20180808/1627454-b8445a653f4c6750.png" alt="1.png" title="1.png" /></a></p>
 
 <p>/etc/security/limits.conf</p>
 
-<p><a href="https://upload-images.jianshu.io/upload_images/1627454-d6ebdfaf780ab486.png"><img src="https://upload-images.jianshu.io/upload_images/1627454-d6ebdfaf780ab486.png" alt="1.png" title="1.png" /></a></p>
+<p><a href="/img/20180808/1627454-d6ebdfaf780ab486.png"><img src="/img/20180808/1627454-d6ebdfaf780ab486.png" alt="1.png" title="1.png" /></a></p>
 
 <h4 id="客户端"><strong>▶ 客户端</strong></h4>
 
@@ -412,11 +412,11 @@
 
 <p>/etc/sysctl.conf</p>
 
-<p><a href="https://upload-images.jianshu.io/upload_images/1627454-8f23a07dbcae39d2.png"><img src="https://upload-images.jianshu.io/upload_images/1627454-8f23a07dbcae39d2.png" alt="1.png" title="1.png" /></a></p>
+<p><a href="/img/20180808/1627454-8f23a07dbcae39d2.png"><img src="/img/20180808/1627454-8f23a07dbcae39d2.png" alt="1.png" title="1.png" /></a></p>
 
 <p>/etc/security/limits.conf</p>
 
-<p><a href="https://upload-images.jianshu.io/upload_images/1627454-3340939bb9ef0a57.png"><img src="https://upload-images.jianshu.io/upload_images/1627454-3340939bb9ef0a57.png" alt="1.png" title="1.png" /></a></p>
+<p><a href="/img/20180808/1627454-3340939bb9ef0a57.png"><img src="/img/20180808/1627454-3340939bb9ef0a57.png" alt="1.png" title="1.png" /></a></p>
 
 <p>为客户端分配ip的方法参考：</p>
 
@@ -437,12 +437,12 @@
 <h4 id="测试过程"><strong>▶ 测试过程</strong></h4>
 
 <p><strong>1、服务器启动初始状态。</strong>
-  <a href="https://upload-images.jianshu.io/upload_images/1627454-d3114100f8712d0d.png"><img src="https://upload-images.jianshu.io/upload_images/1627454-d3114100f8712d0d.png" alt="1.png" title="1.png" /></a></p>
+  <a href="/img/20180808/1627454-d3114100f8712d0d.png"><img src="/img/20180808/1627454-d3114100f8712d0d.png" alt="1.png" title="1.png" /></a></p>
 
 <p>可以看到，服务端初始系统剩余内存 7146316K，Node初始占用内存 27639808b，此时连接数为0。</p>
 
 <p>2、连接数到达100w
-  <a href="https://upload-images.jianshu.io/upload_images/1627454-0b601e92b2147628.png"><img src="https://upload-images.jianshu.io/upload_images/1627454-0b601e92b2147628.png" alt="1.png" title="1.png" /></a></p>
+  <a href="/img/20180808/1627454-0b601e92b2147628.png"><img src="/img/20180808/1627454-0b601e92b2147628.png" alt="1.png" title="1.png" /></a></p>
 
 <p>每个连接消耗的平均内存：7146316 - 1387364 / 1000000 = 5.76k</p>
 
@@ -455,7 +455,7 @@
 <hr />
 
 <p>最后给出一张带个人思考的包含部分类型服务器优化思路的思维导图，仅供参考。
-  <a href="https://upload-images.jianshu.io/upload_images/1627454-bd6206c5fa44dd16.png"><img src="https://upload-images.jianshu.io/upload_images/1627454-bd6206c5fa44dd16.png" alt="1.png" title="1.png" /></a></p>
+  <a href="/img/20180808/1627454-bd6206c5fa44dd16.png"><img src="/img/20180808/1627454-bd6206c5fa44dd16.png" alt="1.png" title="1.png" /></a></p>
 
 <pre><code>                                ----C1000k达成及优化思考图----
 </code></pre>
