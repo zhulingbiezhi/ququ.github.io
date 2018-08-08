@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>转载 on 去去的blog - A super concise theme for Hugo</title>
+    <link>http://zhulingbiezhi.github.io/categories/%E8%BD%AC%E8%BD%BD/</link>
+    <description>Recent content in 转载 on 去去的blog - A super concise theme for Hugo</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 07 Aug 2018 15:04:54 +0800</lastBuildDate>
+    
+	<atom:link href="http://zhulingbiezhi.github.io/categories/%E8%BD%AC%E8%BD%BD/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>【转】Kubernetes核心组件解析</title>
+      <link>http://zhulingbiezhi.github.io/post/%E8%BD%ACkubernetes%E6%A0%B8%E5%BF%83%E7%BB%84%E4%BB%B6%E8%A7%A3%E6%9E%90/</link>
+      <pubDate>Tue, 07 Aug 2018 15:04:54 +0800</pubDate>
+      
+      <guid>http://zhulingbiezhi.github.io/post/%E8%BD%ACkubernetes%E6%A0%B8%E5%BF%83%E7%BB%84%E4%BB%B6%E8%A7%A3%E6%9E%90/</guid>
+      <description>众所周知，Kubernetes是目前最为火热的容器编排工具之一，其背后有如此多的追随者必然是有原因的。首先Kubernetes非常轻量，通常</description>
+    </item>
+    
+    <item>
+      <title>【转】使用GRafana监控Go应用</title>
+      <link>http://zhulingbiezhi.github.io/post/%E8%BD%AC%E4%BD%BF%E7%94%A8grafana%E7%9B%91%E6%8E%A7go%E5%BA%94%E7%94%A8/</link>
+      <pubDate>Tue, 07 Aug 2018 12:17:15 +0800</pubDate>
+      
+      <guid>http://zhulingbiezhi.github.io/post/%E8%BD%AC%E4%BD%BF%E7%94%A8grafana%E7%9B%91%E6%8E%A7go%E5%BA%94%E7%94%A8/</guid>
+      <description>互联网企业背后，依靠的是成千上万台服务器日夜不停运转，以支撑其业务的运转，宕机对于互联网企业来说，代价是 沉重的，轻则影响用户体验，重则直接影</description>
+    </item>
+    
+    <item>
+      <title>【转】单机100w连接（C1000K）</title>
+      <link>http://zhulingbiezhi.github.io/post/%E8%BD%AC%E5%8D%95%E6%9C%BA100w%E8%BF%9E%E6%8E%A5c1000k/</link>
+      <pubDate>Tue, 07 Aug 2018 11:44:00 +0800</pubDate>
+      
+      <guid>http://zhulingbiezhi.github.io/post/%E8%BD%AC%E5%8D%95%E6%9C%BA100w%E8%BF%9E%E6%8E%A5c1000k/</guid>
+      <description>前言 关于C10K的问题就不多说了，应该是一个说烂的话题。网上也有很多C1000k，甚至C10M（也就是1kw并发）的文章，后面会给出我所阅读</description>
+    </item>
+    
+    <item>
+      <title>【转】彻底解决mysql中文乱码</title>
+      <link>http://zhulingbiezhi.github.io/post/%E8%BD%AC%E5%BD%BB%E5%BA%95%E8%A7%A3%E5%86%B3mysql%E4%B8%AD%E6%96%87%E4%B9%B1%E7%A0%81/</link>
+      <pubDate>Tue, 07 Aug 2018 11:35:45 +0800</pubDate>
+      
+      <guid>http://zhulingbiezhi.github.io/post/%E8%BD%AC%E5%BD%BB%E5%BA%95%E8%A7%A3%E5%86%B3mysql%E4%B8%AD%E6%96%87%E4%B9%B1%E7%A0%81/</guid>
+      <description>彻底解决mysql中文乱码 mysql是我们项目中非常常用的数据型数据库。但是因为我们需要在数据库保存中文字符，所以经常遇到数据库乱码情况。下</description>
+    </item>
+    
+    <item>
+      <title>【转】mysql  Join详解</title>
+      <link>http://zhulingbiezhi.github.io/post/%E8%BD%ACmysql--join%E8%AF%A6%E8%A7%A3/</link>
+      <pubDate>Tue, 07 Aug 2018 11:31:25 +0800</pubDate>
+      
+      <guid>http://zhulingbiezhi.github.io/post/%E8%BD%ACmysql--join%E8%AF%A6%E8%A7%A3/</guid>
+      <description>0 索引 JOIN语句的执行顺序 INNER/LEFT/RIGHT/FULL JOIN的区别 ON和WHERE的区别 1 概述 一个完整的SQL语句中会被拆分成多个子句，子句的执行过程中会产生虚拟</description>
+    </item>
+    
+    <item>
+      <title>【转】kubernetes调度详解</title>
+      <link>http://zhulingbiezhi.github.io/post/%E8%BD%ACkubenetes%E8%B0%83%E5%BA%A6%E8%AF%A6%E8%A7%A3/</link>
+      <pubDate>Tue, 07 Aug 2018 11:22:32 +0800</pubDate>
+      
+      <guid>http://zhulingbiezhi.github.io/post/%E8%BD%ACkubenetes%E8%B0%83%E5%BA%A6%E8%AF%A6%E8%A7%A3/</guid>
+      <description>【编者的话】优良的调度是分布式系统的核心。Scheduler调度器做为Kubernetes三大核心组件之一， 承载着整个集群资源的调度功能，其</description>
+    </item>
+    
+    <item>
+      <title>【转】Kubeadm原理解析</title>
+      <link>http://zhulingbiezhi.github.io/post/%E8%BD%ACkubeadm%E5%8E%9F%E7%90%86%E8%A7%A3%E6%9E%90/</link>
+      <pubDate>Tue, 07 Aug 2018 11:19:03 +0800</pubDate>
+      
+      <guid>http://zhulingbiezhi.github.io/post/%E8%BD%ACkubeadm%E5%8E%9F%E7%90%86%E8%A7%A3%E6%9E%90/</guid>
+      <description>【编者的话】根据所处环境的不同，Kubernetes集群的安装部署有多种不同的方式。如果是在公有云上还好，一般都会提供相应的安装方案。如果是</description>
+    </item>
+    
+    <item>
+      <title>【转】Etcd服务端实现</title>
+      <link>http://zhulingbiezhi.github.io/post/%E8%BD%ACetcd%E6%9C%8D%E5%8A%A1%E7%AB%AF%E5%AE%9E%E7%8E%B0/</link>
+      <pubDate>Mon, 06 Aug 2018 11:18:15 +0800</pubDate>
+      
+      <guid>http://zhulingbiezhi.github.io/post/%E8%BD%ACetcd%E6%9C%8D%E5%8A%A1%E7%AB%AF%E5%AE%9E%E7%8E%B0/</guid>
+      <description>7.1 Etcd启动 Etcd有多种启动方式，我们从最简单的方式入手，也就是从embed的etcd.go开始启动，最后会启动EtcdServer。 先</description>
+    </item>
+    
+    <item>
+      <title>【转】强大的Kubernetes包管理工具: Helm</title>
+      <link>http://zhulingbiezhi.github.io/post/%E8%BD%ACkubenetes_helm/</link>
+      <pubDate>Mon, 06 Aug 2018 11:18:15 +0800</pubDate>
+      
+      <guid>http://zhulingbiezhi.github.io/post/%E8%BD%ACkubenetes_helm/</guid>
+      <description>【编者的话】Helm是Kubernetes生态系统中的一个软件包管理工具。本文将介绍为何要使用Helm进行Kubernetes软件包管理，澄</description>
+    </item>
+    
+    <item>
+      <title>【转】浅谈TCP优化</title>
+      <link>http://zhulingbiezhi.github.io/post/%E8%BD%AC%E6%B5%85%E8%B0%88tcp%E4%BC%98%E5%8C%96/</link>
+      <pubDate>Mon, 06 Aug 2018 11:18:15 +0800</pubDate>
+      
+      <guid>http://zhulingbiezhi.github.io/post/%E8%BD%AC%E6%B5%85%E8%B0%88tcp%E4%BC%98%E5%8C%96/</guid>
+      <description>很多人常常对TCP优化有一种雾里看花的感觉，实际上只要理解了TCP的运行方式就能掀开它的神秘面纱。Ilya Grigorik 在「High Performance Browser Networki</description>
+    </item>
+    
+  </channel>
+</rss>
