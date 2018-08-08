@@ -6,10 +6,19 @@
     <description>Recent content in Posts on 去去的blog - A super concise theme for Hugo</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 08 Aug 2018 11:28:35 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 08 Aug 2018 17:05:05 +0800</lastBuildDate>
     
 	<atom:link href="http://zhulingbiezhi.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>【转】浅谈TCP流量控制与拥塞控制</title>
+      <link>http://zhulingbiezhi.github.io/post/%E8%BD%ACtcp%E6%B5%81%E9%87%8F%E6%8E%A7%E5%88%B6%E4%B8%8E%E6%8B%A5%E5%A1%9E%E6%8E%A7%E5%88%B6/</link>
+      <pubDate>Wed, 08 Aug 2018 17:05:05 +0800</pubDate>
+      
+      <guid>http://zhulingbiezhi.github.io/post/%E8%BD%ACtcp%E6%B5%81%E9%87%8F%E6%8E%A7%E5%88%B6%E4%B8%8E%E6%8B%A5%E5%A1%9E%E6%8E%A7%E5%88%B6/</guid>
+      <description>RTT算法 根据前文对TCP超时重传机制的介绍，我们知道Timeout的设置对于重传非常重要： 设长了，重发就慢，丢了老半天才重发，没有效率，性</description>
+    </item>
     
     <item>
       <title>【转】了解Kubernetes安装</title>
