@@ -6,10 +6,19 @@
     <description>Recent content in Kubernetes on 去去的blog - A super concise theme for Hugo</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 24 Aug 2018 10:20:02 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 24 Aug 2018 10:45:00 +0800</lastBuildDate>
     
 	<atom:link href="http://zhulingbiezhi.github.io/tags/kubernetes/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>【原】图说kubernetes</title>
+      <link>http://zhulingbiezhi.github.io/post/%E5%8E%9F%E5%9B%BE%E8%AF%B4kubernetes/</link>
+      <pubDate>Fri, 24 Aug 2018 10:45:00 +0800</pubDate>
+      
+      <guid>http://zhulingbiezhi.github.io/post/%E5%8E%9F%E5%9B%BE%E8%AF%B4kubernetes/</guid>
+      <description>Cluster Overview Node Overview Pods Overview Kubernetes中的基本调度单位叫“pod”。它增加了更高层的抽象来容纳各种组件。一个pod由一个或者多个容器组成，这些容器</description>
+    </item>
     
     <item>
       <title>【转】kubernetes是什么</title>
