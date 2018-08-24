@@ -6,26 +6,44 @@
     <description>Recent content in Kubernetes on 去去的blog - A super concise theme for Hugo</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 09 Aug 2018 15:11:13 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 24 Aug 2018 10:20:02 +0800</lastBuildDate>
     
 	<atom:link href="http://zhulingbiezhi.github.io/tags/kubernetes/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>【转】安装kubernetes集群</title>
-      <link>http://zhulingbiezhi.github.io/post/%E8%BD%AC%E5%AE%89%E8%A3%85kubernetes%E9%9B%86%E7%BE%A4/</link>
+      <title>【转】kubernetes是什么</title>
+      <link>http://zhulingbiezhi.github.io/post/%E8%BD%ACkubernetes%E6%98%AF%E4%BB%80%E4%B9%88/</link>
+      <pubDate>Fri, 24 Aug 2018 10:20:02 +0800</pubDate>
+      
+      <guid>http://zhulingbiezhi.github.io/post/%E8%BD%ACkubernetes%E6%98%AF%E4%BB%80%E4%B9%88/</guid>
+      <description>英文链接：https://en.wikipedia.org/wiki/Kubernetes Kubernetes（通常写成“k8s”）是最开始</description>
+    </item>
+    
+    <item>
+      <title>【转】kubernetes 1.11手动搭建</title>
+      <link>http://zhulingbiezhi.github.io/post/%E8%BD%ACkubernetes-1.11%E6%89%8B%E5%8A%A8%E6%90%AD%E5%BB%BA/</link>
+      <pubDate>Wed, 22 Aug 2018 15:16:48 +0800</pubDate>
+      
+      <guid>http://zhulingbiezhi.github.io/post/%E8%BD%ACkubernetes-1.11%E6%89%8B%E5%8A%A8%E6%90%AD%E5%BB%BA/</guid>
+      <description>本篇延续过往手动安装方式来部署 Kubernetes v1.11.x 版本的 High Availability 集群，而此次教学将直接透过裸机进行部署 Kubernetes 集群。以手动安装的目标是学习 Kubernetes 各组件关析、流程、设定与部</description>
+    </item>
+    
+    <item>
+      <title>【转】kubernetes 1.8手动搭建</title>
+      <link>http://zhulingbiezhi.github.io/post/%E8%BD%ACkubernetes-1.8%E6%89%8B%E5%8A%A8%E6%90%AD%E5%BB%BA/</link>
       <pubDate>Thu, 09 Aug 2018 15:11:13 +0800</pubDate>
       
-      <guid>http://zhulingbiezhi.github.io/post/%E8%BD%AC%E5%AE%89%E8%A3%85kubernetes%E9%9B%86%E7%BE%A4/</guid>
+      <guid>http://zhulingbiezhi.github.io/post/%E8%BD%ACkubernetes-1.8%E6%89%8B%E5%8A%A8%E6%90%AD%E5%BB%BA/</guid>
       <description>手动安装kubernetes集群，通过安装过程可以了解kubernetes的组成部分。 本安装过程全部采用下载二进制安装包的方式安装，k8s镜</description>
     </item>
     
     <item>
-      <title>【转】了解Kubernetes安装</title>
-      <link>http://zhulingbiezhi.github.io/post/%E8%BD%AC%E4%BA%86%E8%A7%A3kubernetes%E5%AE%89%E8%A3%85/</link>
+      <title>【转】Kubernetes1.8手动搭建</title>
+      <link>http://zhulingbiezhi.github.io/post/%E8%BD%AC%E4%BA%86%E8%A7%A3kubernetes/</link>
       <pubDate>Wed, 08 Aug 2018 11:28:35 +0800</pubDate>
       
-      <guid>http://zhulingbiezhi.github.io/post/%E8%BD%AC%E4%BA%86%E8%A7%A3kubernetes%E5%AE%89%E8%A3%85/</guid>
+      <guid>http://zhulingbiezhi.github.io/post/%E8%BD%AC%E4%BA%86%E8%A7%A3kubernetes/</guid>
       <description>由于之前在阿里云上部署的Docker 1.12.2的Swarm集群没能正常展示出其所宣称的Routing mesh和VIP等功能，为了满足项目需</description>
     </item>
     

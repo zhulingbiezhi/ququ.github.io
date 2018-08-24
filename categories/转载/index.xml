@@ -6,10 +6,19 @@
     <description>Recent content in 转载 on 去去的blog - A super concise theme for Hugo</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 08 Aug 2018 17:05:05 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 24 Aug 2018 10:20:02 +0800</lastBuildDate>
     
 	<atom:link href="http://zhulingbiezhi.github.io/categories/%E8%BD%AC%E8%BD%BD/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>【转】kubernetes是什么</title>
+      <link>http://zhulingbiezhi.github.io/post/%E8%BD%ACkubernetes%E6%98%AF%E4%BB%80%E4%B9%88/</link>
+      <pubDate>Fri, 24 Aug 2018 10:20:02 +0800</pubDate>
+      
+      <guid>http://zhulingbiezhi.github.io/post/%E8%BD%ACkubernetes%E6%98%AF%E4%BB%80%E4%B9%88/</guid>
+      <description>英文链接：https://en.wikipedia.org/wiki/Kubernetes Kubernetes（通常写成“k8s”）是最开始</description>
+    </item>
     
     <item>
       <title>【转】浅谈TCP流量控制与拥塞控制</title>
@@ -21,11 +30,11 @@
     </item>
     
     <item>
-      <title>【转】了解Kubernetes安装</title>
-      <link>http://zhulingbiezhi.github.io/post/%E8%BD%AC%E4%BA%86%E8%A7%A3kubernetes%E5%AE%89%E8%A3%85/</link>
+      <title>【转】Kubernetes1.8手动搭建</title>
+      <link>http://zhulingbiezhi.github.io/post/%E8%BD%AC%E4%BA%86%E8%A7%A3kubernetes/</link>
       <pubDate>Wed, 08 Aug 2018 11:28:35 +0800</pubDate>
       
-      <guid>http://zhulingbiezhi.github.io/post/%E8%BD%AC%E4%BA%86%E8%A7%A3kubernetes%E5%AE%89%E8%A3%85/</guid>
+      <guid>http://zhulingbiezhi.github.io/post/%E8%BD%AC%E4%BA%86%E8%A7%A3kubernetes/</guid>
       <description>由于之前在阿里云上部署的Docker 1.12.2的Swarm集群没能正常展示出其所宣称的Routing mesh和VIP等功能，为了满足项目需</description>
     </item>
     
